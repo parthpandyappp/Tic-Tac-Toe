@@ -35,7 +35,7 @@ def Begins():
 
     print("\n\n\t\t\t\t🎍🎍🎍" + text.BOLD + text.UNDERLINE + text.DARKCYAN +
           "Welcome to @TicTacToe" + text.END + text.END + text.END + "🎍🎍🎍\t\t\t\t\t")
-    for i in range(10):
+    for i in range(100):
         printBoard(board)
         move = input("\nNow, the player comes to player " + text.BOLD + text.YELLOW +
                      player + text.END + " What position would you choose? :  ")
@@ -139,6 +139,7 @@ def Begins():
             print("🥳 It's a Tie 🥳")
             print(text.YELLOW +
                   "--------------------------------------------" + text.END)
+            break
 
         # Now we have to change the player after every move.
         if player == 'X':
